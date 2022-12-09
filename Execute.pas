@@ -1,8 +1,8 @@
 unit Execute;
-{Даний модуль буде виконувати усі обчислення
- в залежності від стану CheckBox у main.pas
- передбачається також реалізувати системні повідомлення,
- які будуть виникати при некоректних введених даних}
+{This module will do all the calculations
+  depending on the state of the CheckBox in main.pas
+  it is also intended to implement system messages,
+  which will occur if the data is entered incorrectly}
 
 interface
 
@@ -13,7 +13,7 @@ implementation
 
 uses   main, data, spline ;
 
-{Процедура обчислення}
+{Calculation procedure}
 procedure Eval;
 var k,i:integer;
 begin
