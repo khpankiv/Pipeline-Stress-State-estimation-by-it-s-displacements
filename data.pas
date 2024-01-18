@@ -1,11 +1,11 @@
 unit data;
 
-{Даний модуль призначений для об'явлення
- глобальних змінних та процедур:
-  - процедура зчитування даних з файлу ;
-  - процедура введення точності та масиву р ;
-  - процедура зчитування даних при введенні вручну;
-  - процедури та функції для обчислення сплайнів ; }
+{This module is intended for announcement
+  global variables and procedures:
+   - the procedure for reading data from a file;
+   - the procedure for entering accuracy and array p;
+   - the procedure for reading data when entered manually;
+   - procedures and functions for calculating splines ; }
 
 interface
 uses
@@ -42,7 +42,7 @@ implementation
 uses main, elipt;
 
 
-{Процедура зчитування з файлу}
+{Read from file}
 procedure ReadFromFile;
   var
     ff:textfile;
@@ -73,7 +73,7 @@ procedure ReadFromFile;
     closefile(ff);
   end;
 
-{Процедура зчитування з файлу напружень}
+{Read stress from file}
 procedure ReadFromFileEtalon;
   var
     ff:textfile;
@@ -111,7 +111,7 @@ begin
   eps:=strtofloat(Form1.edit9.text);
 end;
 
-{Процедура введення масиву P}
+{Enter the array
 Procedure Enter_P;
 var
  k:integer;
@@ -120,7 +120,7 @@ begin
   p[k]:=strtofloat(form1.stringgrid2.cells[k,1]);
 end;
 
-{Процедура введення масиву напружень}
+{Enter stress array}
 Procedure Enter_Naprug;
 var
  k:integer;
@@ -132,7 +132,7 @@ begin
   end;
 end;
 
-{Процедура зчитування даних при введені вручну}
+{Read manually input data}
 
 procedure EnterManualData;
 var i:integer;
@@ -156,7 +156,7 @@ begin
 end;
 
 
-{Процедура встановлення глобальних змінних}
+{Set global variables}
 procedure getsp;
 begin
   sp1:=form1.CheckBox1.Checked;
