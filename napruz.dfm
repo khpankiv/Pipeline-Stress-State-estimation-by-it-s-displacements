@@ -2,7 +2,7 @@ object Form4: TForm4
   Left = 185
   Top = 126
   AutoScroll = False
-  Caption = 'Тензори напружень і деформацій'
+  Caption = 'Tensors of stresses and strains'
   ClientHeight = 393
   ClientWidth = 817
   Color = clBtnFace
@@ -30,7 +30,7 @@ object Form4: TForm4
     ParentFont = False
     TabOrder = 0
     object TabSheet1: TTabSheet
-      Caption = 'Деформації по OY'
+      Caption = 'Deformations by OY'
       object PageControl2: TPageControl
         Left = 0
         Top = 8
@@ -128,7 +128,7 @@ object Form4: TForm4
       end
     end
     object TabSheet2: TTabSheet
-      Caption = 'Напруження по OY'
+      Caption = 'Deformations by OY'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -233,7 +233,7 @@ object Form4: TForm4
       end
     end
     object TabSheet3: TTabSheet
-      Caption = 'Деформації по OZ'
+      Caption = 'Stress by OZ'
       ImageIndex = 2
       object PageControl4: TPageControl
         Left = 0
@@ -332,7 +332,7 @@ object Form4: TForm4
       end
     end
     object TabSheet4: TTabSheet
-      Caption = 'Напруження по OZ'
+      Caption = 'Stress by OZ'
       ImageIndex = 3
       object PageControl5: TPageControl
         Left = 0
@@ -431,7 +431,7 @@ object Form4: TForm4
       end
     end
     object TabSheet5: TTabSheet
-      Caption = 'Напруженя загальні'
+      Caption = 'General stress'
       ImageIndex = 4
       object PageControl6: TPageControl
         Left = 0
@@ -530,7 +530,7 @@ object Form4: TForm4
       end
     end
     object TabSheet6: TTabSheet
-      Caption = 'Інтенсивність'
+      Caption = 'Intensity'
       ImageIndex = 5
       object StringGrid6: TStringGrid
         Left = 8
@@ -557,7 +557,7 @@ object Form4: TForm4
     Top = 360
     Width = 75
     Height = 25
-    Caption = 'Вихід'
+    Caption = 'Exit'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
