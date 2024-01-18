@@ -1,7 +1,7 @@
  unit spline;
 
-{Даний модуль містить розрахунок
- згладжуючого сплайну}
+{This module contains a calculation of
+  smoothing spline}
 
 interface
 uses
@@ -121,7 +121,7 @@ end;
 {The end Progonka}
 
 
-{Шукаємо рекомендовані Р}
+{We are looking for recommended R}
 function Find_P(a,h:ar;n:integer):ar;
 var i,j,k:integer;
 pp,aa:ar; b,bb:ara;
@@ -206,13 +206,13 @@ begin
      else hh[i,j]:=0;
   end;
 
-if sp1 then begin     {простий сплайн}
+if sp1 then begin     {ГЇГ°Г®Г±ГІГЁГ© Г±ГЇГ«Г Г©Г­}
   b:=MultVect(hh,f,nm-1,nm+1);
   b:=Progonka(a,b,nm-1);
   for i:=1 to nm-1 do
     m[i+1]:=b[i];
 
-  {тут крайні точки}
+  {here are the extreme points}
   if fp then  begin
      m[nm+1]:=((f[2]-f[nm+1])/h[2]-(f[nm+1]-f[nm])/h[nm+1]-h[nm+1]*m[nm]/6-h[2]*m[2]/6)*3/(h[nm+1]+h[2]);
      m[1]:=m[nm+1];
@@ -271,9 +271,9 @@ sz2:=zg2;
 end;
 end;
 
-if sp2= true then begin     {згладжуючий сплайн}
+if sp2= true then begin     {smoothing spline}
 
-if form1.CheckBox4.Checked=true then {задаємо чи обчислюємо P}
+if form1.CheckBox4.Checked=true then {set or calculate P}
   pp:=Find_P(a,hh,nm)
   else begin
    for i:=1 to (nm+1) do
@@ -335,7 +335,7 @@ if form1.CheckBox4.Checked=true then {задаємо чи обчислюємо P}
   for i:=1 to nm+1 do
     mu[i]:=f[i]-b[i];
 
-    {тут крайні точки}
+    {here are the extreme points}
   if fp then  begin
      m[nm+1]:=((mu[2]-mu[nm+1])/h[2]-(mu[nm+1]-mu[nm])/h[nm+1]-h[nm+1]*m[nm]/6-h[2]*m[2]/6)*3/(h[nm+1]+h[2]);
      m[1]:=m[nm+1];
