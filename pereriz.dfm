@@ -2,7 +2,7 @@ object Form5: TForm5
   Left = 198
   Top = 65
   BorderStyle = bsSingle
-  Caption = 'Січення трубопроводу'
+  Caption = 'Pipeline intersection'
   ClientHeight = 530
   ClientWidth = 752
   Color = clBtnFace
@@ -17,21 +17,21 @@ object Form5: TForm5
     Top = 16
     Width = 184
     Height = 13
-    Caption = 'Точка, в якій розглядається січення'
+    Caption = 'The point at which the section is considered'
   end
   object Label15: TLabel
     Left = 280
     Top = 16
     Width = 8
     Height = 13
-    Caption = 'м'
+    Caption = 'Г¬'
   end
   object Label1: TLabel
     Left = 736
     Top = 48
     Width = 8
     Height = 13
-    Caption = 'м'
+    Caption = 'Г¬'
   end
   object Edit6: TEdit
     Left = 224
@@ -71,7 +71,7 @@ object Form5: TForm5
     Title.Font.Name = 'MS Sans Serif'
     Title.Font.Style = [fsBold, fsItalic]
     Title.Text.Strings = (
-      'Січення трубопроводу')
+      'Г‘ВіГ·ГҐГ­Г­Гї ГІГ°ГіГЎГ®ГЇГ°Г®ГўГ®Г¤Гі')
     BottomAxis.AxisValuesFormat = '#,##0.####'
     BottomAxis.ExactDateTime = False
     BottomAxis.Increment = 0.0001
@@ -102,7 +102,7 @@ object Form5: TForm5
       Marks.Transparent = True
       Marks.Visible = False
       SeriesColor = clRed
-      Title = 'Деформоване січення'
+      Title = 'Deformed section'
       Pointer.HorizSize = 1
       Pointer.InflateMargins = False
       Pointer.Pen.Color = clRed
@@ -141,7 +141,7 @@ object Form5: TForm5
       Marks.Transparent = True
       Marks.Visible = False
       SeriesColor = clGreen
-      Title = 'Січення до деформації'
+      Title = 'Section before deformation'
       Pointer.HorizSize = 1
       Pointer.InflateMargins = False
       Pointer.Pen.Color = 4227072
@@ -180,7 +180,7 @@ object Form5: TForm5
     Top = 424
     Width = 81
     Height = 25
-    Caption = 'Вихід'
+    Caption = 'Exit'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -195,7 +195,7 @@ object Form5: TForm5
     Top = 384
     Width = 81
     Height = 25
-    Caption = 'Друк'
+    Caption = 'Exit'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
