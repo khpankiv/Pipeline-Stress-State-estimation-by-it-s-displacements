@@ -2,7 +2,7 @@ object Form3: TForm3
   Left = 218
   Top = 114
   AutoScroll = False
-  Caption = 'Визначення напружено-деформованого стану трубопроводу'
+  Caption = 'Pipeline stress and strained atate estimation'
   ClientHeight = 332
   ClientWidth = 665
   Color = clBtnFace
@@ -23,21 +23,21 @@ object Form3: TForm3
     Top = 224
     Width = 74
     Height = 13
-    Caption = 'Нев'#39'язка по Y:'
+    Caption = 'Inviscid Y:'
   end
   object Label2: TLabel
     Left = 336
     Top = 256
     Width = 74
     Height = 13
-    Caption = 'Нев'#39'язка по Z:'
+    Caption = 'Inviscid Z:'
   end
   object RadioGroup1: TRadioGroup
     Left = 16
     Top = 48
     Width = 361
     Height = 81
-    Caption = 'Міра еліптичності'
+    Caption = 'Ellipticity measure'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -51,7 +51,7 @@ object Form3: TForm3
     Top = 176
     Width = 153
     Height = 25
-    Caption = 'Обчислити'
+    Caption = 'Calculate'
     Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -67,7 +67,7 @@ object Form3: TForm3
     Top = 296
     Width = 81
     Height = 25
-    Caption = 'Закрити'
+    Caption = 'Close'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -82,7 +82,7 @@ object Form3: TForm3
     Top = 8
     Width = 305
     Height = 25
-    Caption = 'Ввести переміщення по осі OZ'
+    Caption = 'Enter displacements for OZ'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -97,7 +97,7 @@ object Form3: TForm3
     Top = 8
     Width = 305
     Height = 25
-    Caption = 'Ввести переміщення по осі OY'
+    Caption = 'Enter displacements for  OY'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -126,7 +126,7 @@ object Form3: TForm3
     Top = 216
     Width = 105
     Height = 25
-    Caption = 'Тензори'
+    Caption = 'Tenzors'
     Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -142,7 +142,7 @@ object Form3: TForm3
     Top = 184
     Width = 105
     Height = 25
-    Caption = 'Графік: Del (m)'
+    Caption = 'Plot: Del (m)'
     Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -158,7 +158,7 @@ object Form3: TForm3
     Top = 72
     Width = 113
     Height = 17
-    Caption = 'Ввести вручну'
+    Caption = 'Enter manually'
     Checked = True
     TabOrder = 9
     TabStop = True
@@ -169,7 +169,7 @@ object Form3: TForm3
     Top = 96
     Width = 113
     Height = 17
-    Caption = 'Оптимальна'
+    Caption = 'Optimal'
     TabOrder = 10
     OnClick = RadioButton2Click
   end
@@ -184,7 +184,7 @@ object Form3: TForm3
       Top = 8
       Width = 67
       Height = 13
-      Caption = 'Коефіцієнт Y:'
+      Caption = 'Coefficient Y:'
       Color = clBtnFace
       ParentColor = False
     end
@@ -193,7 +193,7 @@ object Form3: TForm3
       Top = 32
       Width = 67
       Height = 13
-      Caption = 'Коефіцієнт Z:'
+      Caption = 'Coefficient Z:'
     end
     object Edit10: TEdit
       Left = 96
@@ -219,7 +219,7 @@ object Form3: TForm3
     Top = 48
     Width = 249
     Height = 81
-    Caption = 'Міра розтягу/стиску січень'
+    Caption = 'Measure of tension/compression of sections'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -232,7 +232,7 @@ object Form3: TForm3
       Top = 24
       Width = 67
       Height = 13
-      Caption = 'Коефіцієнт Y:'
+      Caption = 'Coefficient Y:'
       Color = clBtnFace
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -247,7 +247,7 @@ object Form3: TForm3
       Top = 49
       Width = 67
       Height = 13
-      Caption = 'Коефіцієнт Z:'
+      Caption = 'Coefficient Z:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -291,7 +291,7 @@ object Form3: TForm3
     Top = 142
     Width = 270
     Height = 179
-    Caption = 'Додаткові дані'
+    Caption = 'Additional data'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -304,7 +304,7 @@ object Form3: TForm3
       Top = 25
       Width = 94
       Height = 13
-      Caption = 'Зовнішній діаметр:'
+      Caption = 'External diameter:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -317,7 +317,7 @@ object Form3: TForm3
       Top = 27
       Width = 18
       Height = 16
-      Caption = 'мм'
+      Caption = 'Г¬Г¬'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -330,7 +330,7 @@ object Form3: TForm3
       Top = 79
       Width = 142
       Height = 13
-      Caption = 'Кількість знаків після коми:'
+      Caption = 'Number of decimal places:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -343,7 +343,7 @@ object Form3: TForm3
       Top = 108
       Width = 116
       Height = 13
-      Caption = 'Крок обчислень по осі:'
+      Caption = 'Calculation step along the axis:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -356,7 +356,7 @@ object Form3: TForm3
       Top = 49
       Width = 83
       Height = 13
-      Caption = 'Товщина стінки:'
+      Caption = 'Wall thickness:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -369,7 +369,7 @@ object Form3: TForm3
       Top = 51
       Width = 18
       Height = 16
-      Caption = 'мм'
+      Caption = 'Г¬Г¬'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -382,7 +382,7 @@ object Form3: TForm3
       Top = 107
       Width = 9
       Height = 16
-      Caption = 'м'
+      Caption = 'Г¬'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -13
@@ -395,7 +395,7 @@ object Form3: TForm3
       Top = 140
       Width = 137
       Height = 13
-      Caption = 'Кількість точок по січенню:'
+      Caption = 'The number of points on the section:'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -484,7 +484,7 @@ object Form3: TForm3
     Top = 152
     Width = 185
     Height = 17
-    Caption = 'Записати тензори в файли'
+    Caption = 'Write tenzors to files'
     Checked = True
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -501,7 +501,7 @@ object Form3: TForm3
     Top = 248
     Width = 105
     Height = 25
-    Caption = 'Січення'
+    Caption = 'Section'
     Enabled = False
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -516,16 +516,16 @@ object Form3: TForm3
     Left = 608
     Top = 139
     object N1: TMenuItem
-      Caption = 'Файл'
+      Caption = 'File'
       object N4: TMenuItem
-        Caption = 'Вихід'
+        Caption = 'Г‚ГЁГµВіГ¤'
       end
     end
     object N2: TMenuItem
-      Caption = 'Операції'
+      Caption = 'Operations'
     end
     object N3: TMenuItem
-      Caption = 'Допомога'
+      Caption = 'Help'
     end
   end
 end
