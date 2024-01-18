@@ -1,8 +1,8 @@
 unit main;
 
-{ Даний модуль є головним модулем і містить опис
-  головного вікна та всіх його компонентів
-  та процедури, які описують їх поведінку  }
+{ This module is the main module and contains a description
+   the main window and all its components
+   and procedures that describe their behavior }
 
 interface
 
@@ -277,11 +277,11 @@ begin
 if sp2=true then begin
 assignfile(f1,'sglad.spr');
 rewrite(f1);
-writeln(f1,'*X, м');
+writeln(f1,'*X, Г¬');
 for i:=1 to km do
 write(f1,sx[i]:0:toc,#9);
 writeln(f1);
-writeln(f1,'*F(x), м');
+writeln(f1,'*F(x), Г¬');
 for i:=1 to km do
 write(f1,sg[i]:0:toc,#9);
 writeln(f1);
@@ -289,11 +289,11 @@ writeln(f1,'*F`(x)');
 for i:=1 to km do
 write(f1,sg1[i]:0:toc,#9);
 writeln(f1);
-writeln(f1,'*F"(x), 1/м');
+writeln(f1,'*F"(x), 1/Г¬');
 for i:=1 to km do
 write(f1,sg2[i]:0:toc,#9);
 writeln(f1);
-writeln(f1,'*Напруження(x), МПа');
+writeln(f1,'*Stress(x), ГЊГЏГ ');
 for i:=1 to km do
 write(f1,sig[i]:0:toc,#9);
 writeln(f1);
@@ -302,11 +302,11 @@ end;
 if sp1=true then begin
 assignfile(f1,'simple.spr');
 rewrite(f1);
-writeln(f1,'*X, м');
+writeln(f1,'*X, Г¬');
 for i:=1 to km do
 write(f1,zx[i]:0:toc,#9);
 writeln(f1);
-writeln(f1,'*F(x), м');
+writeln(f1,'*F(x), Г¬');
 for i:=1 to km do
 write(f1,zg[i]:0:toc,#9);
 writeln(f1);
@@ -314,11 +314,11 @@ writeln(f1,'*F`(x)');
 for i:=1 to km do
 write(f1,zg1[i]:0:toc,#9);
 writeln(f1);
-writeln(f1,'*F"(x), 1/м');
+writeln(f1,'*F"(x), 1/Г¬');
 for i:=1 to km do
 write(f1,zg2[i]:0:toc,#9);
 writeln(f1);
-writeln(f1,'*Напруження(x), МПа');
+writeln(f1,'*Stress(x), ГЊГЏГ ');
 for i:=1 to km do
 write(f1,zig[i]:0:toc,#9);
 writeln(f1);
@@ -509,13 +509,13 @@ end;
 
 procedure TForm1.FormShow(Sender: TObject);
 begin
-stringgrid1.Cells[0,0]:='X, м';
-stringgrid1.Cells[0,1]:='Fпоч, м';
-stringgrid1.Cells[0,2]:='Fкін, м';
-stringgrid2.Cells[0,0]:='X, м';
+stringgrid1.Cells[0,0]:='X, m';
+stringgrid1.Cells[0,1]:='Fstart, m';
+stringgrid1.Cells[0,2]:='Fend, m';
+stringgrid2.Cells[0,0]:='X, m';
 stringgrid2.Cells[0,1]:='P';
-stringgrid3.Cells[0,0]:='X, м';
-stringgrid3.Cells[0,1]:='Sigma, МПа';
+stringgrid3.Cells[0,0]:='X, m';
+stringgrid3.Cells[0,1]:='Sigma, MPa';
 end;
 
 procedure TForm1.Edit9Change(Sender: TObject);
