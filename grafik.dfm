@@ -2,7 +2,7 @@ object Form6: TForm6
   Left = 231
   Top = 121
   AutoScroll = False
-  Caption = 'Залежність нев'#39'язки від міри еліптичності'
+  Caption = 'Dependence of the misalignment on the measure of ellipticity'
   ClientHeight = 428
   ClientWidth = 633
   Color = clBtnFace
@@ -21,7 +21,7 @@ object Form6: TForm6
     Top = 19
     Width = 14
     Height = 13
-    Caption = 'від'
+    Caption = 'from'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
@@ -34,7 +34,7 @@ object Form6: TForm6
     Top = 19
     Width = 12
     Height = 13
-    Caption = 'до'
+    Caption = 'to'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -12
@@ -47,7 +47,7 @@ object Form6: TForm6
     Top = 16
     Width = 212
     Height = 16
-    Caption = 'Діапазон зміни коефіцієнта:'
+    Caption = 'Range of coefficient change:'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -13
@@ -68,17 +68,17 @@ object Form6: TForm6
     Title.Font.Name = 'MS Sans Serif'
     Title.Font.Style = [fsBold, fsItalic]
     Title.Text.Strings = (
-      'Залежність нев"язки від міри еліптичності')
+      'Dependence of the uncertainty on the degree of ellipticity')
     BottomAxis.AxisValuesFormat = '#,##0.####'
     BottomAxis.LabelsAngle = 90
-    BottomAxis.Title.Caption = 'Міра еліптичності'
+    BottomAxis.Title.Caption = 'Ellipticity measure'
     BottomAxis.Title.Font.Charset = RUSSIAN_CHARSET
     BottomAxis.Title.Font.Color = clBlack
     BottomAxis.Title.Font.Height = -13
     BottomAxis.Title.Font.Name = 'MS Sans Serif'
     BottomAxis.Title.Font.Style = []
     LeftAxis.TickLength = 6
-    LeftAxis.Title.Caption = 'Значення нев'#39'язки, МН'
+    LeftAxis.Title.Caption = 'The value of the gap, MN'
     LeftAxis.Title.Font.Charset = RUSSIAN_CHARSET
     LeftAxis.Title.Font.Color = clBlack
     LeftAxis.Title.Font.Height = -13
@@ -97,7 +97,7 @@ object Form6: TForm6
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clRed
-      Title = 'По осі Oy'
+      Title = 'Along the axis Oy'
       LinePen.Width = 2
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -115,7 +115,7 @@ object Form6: TForm6
       Marks.ArrowLength = 8
       Marks.Visible = False
       SeriesColor = clGreen
-      Title = 'По осі Oz'
+      Title = 'Along the axis Oz'
       LinePen.Width = 2
       Pointer.InflateMargins = True
       Pointer.Style = psRectangle
@@ -135,7 +135,7 @@ object Form6: TForm6
     Top = 392
     Width = 81
     Height = 25
-    Caption = 'Вихід'
+    Caption = 'Exit'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -166,7 +166,7 @@ object Form6: TForm6
     Top = 328
     Width = 81
     Height = 25
-    Caption = 'Обчислити'
+    Caption = 'Calculate'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
@@ -181,7 +181,7 @@ object Form6: TForm6
     Top = 360
     Width = 81
     Height = 25
-    Caption = 'Друк'
+    Caption = 'Exit'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
