@@ -7205,7 +7205,7 @@ object Form_splash: TForm_splash
     Top = 16
     Width = 384
     Height = 24
-    Caption = 'ВИПУСКНА МАГІСТЕРСЬКА РОБОТА '
+    Caption = 'GRADUATE MASTER'S THESIS '
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clFuchsia
@@ -7223,7 +7223,7 @@ object Form_splash: TForm_splash
     Top = 40
     Width = 454
     Height = 24
-    Caption = 'Система оцінки НДС ділянок трубопроводів '
+    Caption = 'The system for pipeline's stress and state estimation'
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clRed
@@ -7239,7 +7239,7 @@ object Form_splash: TForm_splash
     Top = 72
     Width = 499
     Height = 20
-    Caption = 'Розробник: ст. гр. АУ-99-2 Мартинюк Христина Василівна'
+    Caption = 'Developer: Student AU-99-2 Pankiv Khrystyna Vasylivna'
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clAqua
@@ -7255,7 +7255,7 @@ object Form_splash: TForm_splash
     Top = 96
     Width = 312
     Height = 20
-    Caption = 'Керівник: Олійник Андрій Петрович'
+    Caption = 'Supervisor: Andriy Petrovych Oliynyk'
     Color = clWhite
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clYellow
