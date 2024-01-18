@@ -56,7 +56,7 @@ var
  i:integer;
 begin
 stringgrid3.ColCount:=nm+2;
-stringgrid3.Cells[0,0]:='X, м';
+stringgrid3.Cells[0,0]:='X, Г¬';
 stringgrid3.Cells[0,1]:='P';
 for i:=1 to nm+1 do begin
 stringgrid3.Cells[i,0]:=floattostrf(x[i],fffixed,10,toc);
@@ -74,15 +74,15 @@ LineSeries3.clear;
 LineSeries4.clear;
 Series1.Clear;
 
-for i:=1 to nm+1 do    {точки виміру}
+for i:=1 to nm+1 do    {measurement points}
 PointSeries1.addxy(x[i],f[i]);
 
-if form1.CheckBox4.Checked=true then begin  {еталонні напруження}
+if form1.CheckBox4.Checked=true then begin  {reference stresses}
 for i:=1 to nm+1 do
 Series1.addxy(x[i],eta[i]);
 end;
 
-if sp1=true then    {простий сплайн}
+if sp1=true then    {Spline}
 for i:=1 to km do
 begin
 LineSeries5.Addxy(zx[i],zg[i]);
@@ -91,7 +91,7 @@ LineSeries1.Addxy(zx[i],zg2[i]);
 LineSeries3.Addxy(zx[i],zig[i]);
 end;
 
-if sp2=true then       {згладжуючий сплайн}
+if sp2=true then       {smoothing spline}
 for i:=1 to km do
 begin
 LineSeries6.Addxy(sx[i],sg[i]);
