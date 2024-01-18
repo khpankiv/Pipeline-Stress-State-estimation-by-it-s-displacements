@@ -2,7 +2,7 @@ object Form2: TForm2
   Left = 218
   Top = 176
   BorderStyle = bsSingle
-  Caption = 'Значення переміщень'
+  Caption = 'Г‡Г­Г Г·ГҐГ­Г­Гї ГЇГҐГ°ГҐГ¬ВіГ№ГҐГ­Гј'
   ClientHeight = 215
   ClientWidth = 770
   Color = clBtnFace
@@ -31,7 +31,7 @@ object Form2: TForm2
     ParentFont = False
     TabOrder = 0
     object TabSheet1: TTabSheet
-      Caption = 'Згладжуючий сплайн'
+      Caption = 'Г‡ГЈГ«Г Г¤Г¦ГіГѕГ·ГЁГ© Г±ГЇГ«Г Г©Г­'
       object StringGrid3: TStringGrid
         Left = 8
         Top = 8
@@ -52,7 +52,7 @@ object Form2: TForm2
       end
     end
     object TabSheet2: TTabSheet
-      Caption = 'Простий сплайн'
+      Caption = 'ГЏГ°Г®Г±ГІГЁГ© Г±ГЇГ«Г Г©Г­'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -11
@@ -85,7 +85,7 @@ object Form2: TForm2
     Top = 184
     Width = 75
     Height = 25
-    Caption = 'Вихід'
+    Caption = 'Г‚ГЁГµВіГ¤'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -11
