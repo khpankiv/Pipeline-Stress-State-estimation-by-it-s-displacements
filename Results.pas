@@ -33,16 +33,16 @@ var i:integer;
 begin
 stringgrid3.ColCount:=km+1;
 stringgrid1.ColCount:=km+1;
-stringgrid1.Cells[0,0]:='X, Ï';
-stringgrid1.Cells[0,1]:='Y, Ï';
+stringgrid1.Cells[0,0]:='X, m';
+stringgrid1.Cells[0,1]:='Y, m';
 stringgrid1.Cells[0,2]:='Y`';
-stringgrid1.Cells[0,3]:='Y``, 1/Ï';
-stringgrid1.Cells[0,4]:='Sigma, Ãœ‡';
-stringgrid3.Cells[0,0]:='X, Ï';
-stringgrid3.Cells[0,1]:='Y, Ï';
+stringgrid1.Cells[0,3]:='Y``, 1/m';
+stringgrid1.Cells[0,4]:='Sigma';
+stringgrid3.Cells[0,0]:='X, m';
+stringgrid3.Cells[0,1]:='Y, m';
 stringgrid3.Cells[0,2]:='Y`';
-stringgrid3.Cells[0,3]:='Y``, 1/Ï';
-stringgrid3.Cells[0,4]:='Sigma, Ãœ‡';
+stringgrid3.Cells[0,3]:='Y``, 1/m';
+stringgrid3.Cells[0,4]:='Sigma';
 for i:=1 to km do begin
 stringgrid3.Cells[i,0]:=floattostrf(sx[i],fffixed,10,toc);
 stringgrid3.Cells[i,1]:=floattostrf(sg[i],fffixed,10,toc);
